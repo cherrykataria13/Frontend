@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RapidFort: File Upload</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>RapidFort: Campus Recruitment Drive</h1>
+    <p>Upload any file to get its information</p>
+    <img src="images.jpg" alt="Hacker Image">
+  </header>
+
+  <div class="container">
+    <form id="uploadForm">
+      <div class="file-input-container">
+        <button type="button" id="chooseFileButton">Choose a file</button>
+        <input type="file" id="fileInput" name="file" style="display: none;">
+      </div>
+      <div class="file-info" id="fileInfoContainer" style="display: none;">
+        <p><strong>Selected File:</strong> <span id="selectedFileName"></span></p>
+      </div>
+      <div class="center" style="display: none;" id="uploadButtonContainer">
+        <button type="submit" id="uploadButton">Upload</button>
+      </div>
+    </form>
+
+    <div id="infoContainer" class="info-container" style="display: none;">
+      <div class="response-info">
+        <h2>File Information:</h2>
+        <p><strong>Original Name:</strong> <span id="originalName"></span></p>
+        <p><strong>Size:</strong> <span id="fileSize"></span> bytes</p>
+        <p><strong>MIME Type:</strong> <span id="mimeType"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2023 ck. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
