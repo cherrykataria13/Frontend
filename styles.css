@@ -83,6 +83,6 @@ body {
   }
 
   .file-info {
-    text-align: center; /* Center-align the content */
+    text-align: center;
     display: none;
   }

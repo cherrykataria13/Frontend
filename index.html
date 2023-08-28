@@ -12,19 +12,23 @@
   </header>
 
   <div class="container">
+    <!-- Form to upload file -->
     <form id="uploadForm">
+      <!-- File input container -->
       <div class="file-input-container">
         <button type="button" id="chooseFileButton">Choose a file</button>
         <input type="file" id="fileInput" name="file" style="display: none;">
       </div>
+      <!-- To display informaion of the file -->
       <div class="file-info" id="fileInfoContainer" style="display: none;">
         <p><strong>Selected File:</strong> <span id="selectedFileName"></span></p>
       </div>
+      <!-- Container to upload file -->
       <div class="center" style="display: none;" id="uploadButtonContainer">
         <button type="submit" id="uploadButton">Upload</button>
       </div>
     </form>
-
+    <!-- Stores the details of the uploaded files -->
     <div id="infoContainer" class="info-container" style="display: none;">
       <div class="response-info">
         <h2>File Information:</h2>
@@ -36,7 +40,7 @@
   </div>
 
   <footer class="footer">
-    <p>&copy; 2023 ck. All rights reserved.</p>
+    <p>&copy; ck </p>
   </footer>
 
   <script src="script.js"></script>
