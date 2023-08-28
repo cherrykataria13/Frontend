@@ -24,7 +24,7 @@ document.getElementById('uploadForm').addEventListener('submit', async (event) =
   event.preventDefault();
 
   const formData = new FormData(document.getElementById('uploadForm'));
-  const response = await fetch('https://rf-backend-production.up.railway.app/upload', {
+  const response = await fetch('https://rfc-production.up.railway.app/upload', {
     method: 'POST',
     body: formData
   });
